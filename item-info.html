@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ITEM INFO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- UIkit CSS & JS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <header class="product-header">
+        <div class="product-inner clear">
+          <a class="back" href="javascript:history.back()">뒤로가기</a>
+          <div class="header-icon">
+          	<a class="icon-home" href="home.html"><img src="images/icon-03.png" alt="홈"></a>
+          	<a class="icon-search" href="#a"><img src="images/icon-05.png" alt="검색"></a>
+          	<a class="icon-cart" href="#a"><img src="images/icon-06.png" alt="장바구니"><span>1</span></a>
+          </div>
+        </div>
+      </header>
+    </header>
+    <main>
+      <section class="product-slide">
+        <div>
+        <!-- slide -->
+          <div class="product-slide" uk-slideshow="animation: slide">
+            <div class="product-slide-box uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img src="images/detail-01-01.png" alt="">
+                </li>
+                <li>
+                  <img src="images/detail-01-02.png" alt="">
+                </li>
+                <li>
+                  <img src="images/detail-01-03.png" alt="">
+                </li>
+                <li>
+                  <img src="images/detail-01-04.png" alt="">
+                </li>
+              </ul>
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <ul class="product-btn uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          </div>
+        </div>
+      </section>
+      <section class="product-info">
+        <div class="info-box">
+        	<div class="price">
+        		<h4>[비비엠] 마마무 휘인 착용 BLUE 04_블루 04 / 휘인선글라스 / 마마무선글라스</h4>
+						<strong>190,000원</strong><em>220,000원</em>
+        	</div> 
+          <div class="color">
+            <small>color</small> 
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="size">
+            <small>size</small> 
+            <span class="active">standard</span>
+            <span>large</span>
+          </div>
+          <p>
+            클래식 선글라스는 시간이 지나도 변하지 않는 레트로 스타일의 가치를 표방
+            하는 선글라스 입니다.  50년대 복고 디자인의 클럽마스터 클래식은 시대를
+            앞서나가던 예술가들로부터 사랑받던 제품입니다.
+          </p>
+          <div class="buy">
+          	<input type="checkbox" id=like><label for="like"></label> 
+            <button><img src="images/icon-11.png" alt=""></button>
+            <button>구매하기</button>
+          </div>
+        </div>
+      </section>
+    </main>
+<!--
+    <footer id="footer">
+    	 include footer 
+    </footer>
+-->
+  </div>  
+   
+  <script>
+		$('#footer').load('footer.html')
+		//옵션 선택
+		$('.color span, .size span').click(function(){
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+		});
+	</script>
+  
+</body>
+</html>
