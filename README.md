@@ -1,5 +1,5 @@
-#DONGURY
-##모바일웹 안경 쇼핑몰
+# DONGURY
+모바일웹 안경 쇼핑몰
 html, css, jquery, UIkit
 
 **목업보기**
