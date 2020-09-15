@@ -3,4 +3,4 @@
 html, css, jquery, UIkit
 
 **목업보기**      
-<http://beebii.cafe24.com/port/work/cinebox/mockup-frameset.html>
+<http://beebii.cafe24.com/port/work/dongury/mockup-frameset.html>
